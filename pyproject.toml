@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vertical-infill-planner"
+version = "0.1.0"
+description = "Vertical infill well placement and injector/producer assignment inside a field boundary"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scipy>=1.10",
+    "shapely>=2.0",
+    "matplotlib>=3.7",
+    "openpyxl>=3.1",
+]
+keywords = ["reservoir engineering", "well placement", "infill drilling", "waterflood"]
+
+[project.scripts]
+infill-planner = "infill_planner.planner:cli"
+
+[tool.setuptools]
+packages = ["infill_planner"]
