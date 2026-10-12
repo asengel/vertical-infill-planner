@@ -1,0 +1,36 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Downloaded Norne reservoir model files
+examples/norne/data/
+
+# Generated Norne results
+examples/norne/output/
+
+# Temporary files
+*.log
+*.tmp
